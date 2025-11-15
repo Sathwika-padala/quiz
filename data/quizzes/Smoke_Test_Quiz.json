@@ -1,0 +1,38 @@
+{
+  "id": "eeae6aa0-42dc-4d86-9a1e-b5bad85b4b5e",
+  "title": "Smoke Test Quiz",
+  "questions": [
+    {
+      "id": "7",
+      "text": "In which year did World War II end?",
+      "options": [
+        "1944",
+        "1943",
+        "1946",
+        "1945"
+      ],
+      "answer": "D",
+      "topic": "Geography",
+      "difficulty": "medium",
+      "explanation": "World War II ended in 1945 with the surrender of Japan."
+    },
+    {
+      "id": "1",
+      "text": "What is the capital of France?",
+      "options": [
+        "Rome",
+        "Berlin",
+        "Paris",
+        "London"
+      ],
+      "answer": "C",
+      "topic": "Geography",
+      "difficulty": "easy",
+      "explanation": "Paris is the capital and largest city of France."
+    }
+  ],
+  "category": "Geography",
+  "difficulty": "mixed",
+  "timer_per_question": 0,
+  "created_at": "2025-11-15T16:26:46.892879+00:00"
+}

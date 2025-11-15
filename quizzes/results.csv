@@ -1,0 +1,11 @@
+timestamp,index,question,chosen_letter,chosen_text,correct_letter,correct_text,is_correct
+2025-11-15T16:11:18.968202,1,What is 7 * 8?,B,48,D,56,False
+2025-11-15T16:12:28.372735,1,Which planet is known as the Red Planet?,C,Mars,C,Mars,True
+2025-11-15T16:12:28.372735,2,What is 7 * 8?,D,56,D,56,True
+2025-11-15T16:12:28.372735,3,What is the capital of France?,B,Paris,B,Paris,True
+2025-11-15T16:14:42.912337,1,What is 7 * 8?,A,56,A,56,True
+2025-11-15T16:14:42.912337,2,What is the capital of France?,D,Paris,D,Paris,True
+2025-11-15T16:14:42.912337,3,Which element has the chemical symbol 'O'?,D,Oxygen,D,Oxygen,True
+2025-11-15T16:15:40.915463,1,Which element has the chemical symbol 'O'?,C,Oxygen,C,Oxygen,True
+2025-11-15T16:15:40.915463,2,Which planet is known as the Red Planet?,B,Mars,B,Mars,True
+2025-11-15T16:15:40.915463,3,Who wrote 'Romeo and Juliet'?,D,William Shakespeare,D,William Shakespeare,True

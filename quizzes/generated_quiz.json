@@ -1,0 +1,38 @@
+[
+  {
+    "id": "2",
+    "text": "Which element has the chemical symbol 'O'?",
+    "options": [
+      "Gold",
+      "Iron",
+      "Oxygen",
+      "Silver"
+    ],
+    "answer": "C",
+    "topic": "Chemistry"
+  },
+  {
+    "id": "5",
+    "text": "Which planet is known as the Red Planet?",
+    "options": [
+      "Venus",
+      "Mars",
+      "Saturn",
+      "Jupiter"
+    ],
+    "answer": "B",
+    "topic": "Astronomy"
+  },
+  {
+    "id": "3",
+    "text": "Who wrote 'Romeo and Juliet'?",
+    "options": [
+      "Charles Dickens",
+      "Mark Twain",
+      "Jane Austen",
+      "William Shakespeare"
+    ],
+    "answer": "D",
+    "topic": "Literature"
+  }
+]

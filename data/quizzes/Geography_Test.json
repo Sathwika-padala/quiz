@@ -1,0 +1,38 @@
+{
+  "id": "c1ef0ba0-46dc-44d2-ab84-dc9b6c8a755a",
+  "title": "Geography Test",
+  "questions": [
+    {
+      "id": "7",
+      "text": "In which year did World War II end?",
+      "options": [
+        "1944",
+        "1945",
+        "1943",
+        "1946"
+      ],
+      "answer": "B",
+      "topic": "Geography",
+      "difficulty": "medium",
+      "explanation": "World War II ended in 1945 with the surrender of Japan."
+    },
+    {
+      "id": "1",
+      "text": "What is the capital of France?",
+      "options": [
+        "Rome",
+        "Paris",
+        "London",
+        "Berlin"
+      ],
+      "answer": "B",
+      "topic": "Geography",
+      "difficulty": "easy",
+      "explanation": "Paris is the capital and largest city of France."
+    }
+  ],
+  "category": "Geography",
+  "difficulty": "mixed",
+  "timer_per_question": 0,
+  "created_at": "2025-11-15T16:28:36.495845+00:00"
+}

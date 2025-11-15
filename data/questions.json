@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1",
+    "text": "What is the capital of France?",
+    "options": ["Paris", "London", "Berlin", "Rome"],
+    "answer": "A",
+    "topic": "Geography",
+    "difficulty": "easy",
+    "explanation": "Paris is the capital and largest city of France."
+  },
+  {
+    "id": "2",
+    "text": "Which element has the chemical symbol 'O'?",
+    "options": ["Gold", "Oxygen", "Silver", "Iron"],
+    "answer": "B",
+    "topic": "Chemistry",
+    "difficulty": "easy",
+    "explanation": "Oxygen (O) is a non-metal chemical element with atomic number 8."
+  },
+  {
+    "id": "3",
+    "text": "Who wrote 'Romeo and Juliet'?",
+    "options": ["Charles Dickens", "William Shakespeare", "Mark Twain", "Jane Austen"],
+    "answer": "B",
+    "topic": "Literature",
+    "difficulty": "medium",
+    "explanation": "William Shakespeare wrote this tragedy in the late 16th century."
+  },
+  {
+    "id": "4",
+    "text": "What is 7 * 8?",
+    "options": ["54", "56", "48", "64"],
+    "answer": "B",
+    "topic": "Math",
+    "difficulty": "easy",
+    "explanation": "7 multiplied by 8 equals 56."
+  },
+  {
+    "id": "5",
+    "text": "Which planet is known as the Red Planet?",
+    "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+    "answer": "B",
+    "topic": "Astronomy",
+    "difficulty": "easy",
+    "explanation": "Mars is called the Red Planet due to its reddish appearance."
+  },
+  {
+    "id": "6",
+    "text": "What is the chemical formula for salt?",
+    "options": ["H2O", "NaCl", "CO2", "KCl"],
+    "answer": "B",
+    "topic": "Chemistry",
+    "difficulty": "medium",
+    "explanation": "Sodium chloride (NaCl) is the chemical formula for table salt."
+  },
+  {
+    "id": "7",
+    "text": "In which year did World War II end?",
+    "options": ["1943", "1944", "1945", "1946"],
+    "answer": "C",
+    "topic": "Geography",
+    "difficulty": "medium",
+    "explanation": "World War II ended in 1945 with the surrender of Japan."
+  },
+  {
+    "id": "8",
+    "text": "What is the largest planet in our solar system?",
+    "options": ["Saturn", "Neptune", "Jupiter", "Uranus"],
+    "answer": "C",
+    "topic": "Astronomy",
+    "difficulty": "easy",
+    "explanation": "Jupiter is the largest planet by mass and volume."
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "timestamp": "2025-11-15T16:26:46.893292+00:00",
+    "username": "TestUser",
+    "quiz_title": "Smoke Test Quiz",
+    "score": 2,
+    "total": 2,
+    "percentage": 100.0
+  },
+  {
+    "timestamp": "2025-11-15T16:28:44.900352+00:00",
+    "username": "Alice",
+    "quiz_title": "Math Quiz",
+    "score": 5,
+    "total": 5,
+    "percentage": 100.0
+  },
+  {
+    "timestamp": "2025-11-15T16:28:44.900660+00:00",
+    "username": "Bob",
+    "quiz_title": "Geography Quiz",
+    "score": 3,
+    "total": 5,
+    "percentage": 60.0
+  },
+  {
+    "timestamp": "2025-11-15T16:28:44.900994+00:00",
+    "username": "Charlie",
+    "quiz_title": "Chemistry Quiz",
+    "score": 4,
+    "total": 5,
+    "percentage": 80.0
+  },
+  {
+    "timestamp": "2025-11-15T16:28:44.901338+00:00",
+    "username": "Alice",
+    "quiz_title": "Science Quiz",
+    "score": 2,
+    "total": 5,
+    "percentage": 40.0
+  }
+]
