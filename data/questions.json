@@ -10,6 +10,60 @@
   },
   {
     "id": "2",
+    "text": "Which country is the largest by area?",
+    "options": ["Canada", "Russia", "United States", "China"],
+    "answer": "B",
+    "topic": "Geography",
+    "difficulty": "easy",
+    "explanation": "Russia is the largest country by total area, covering over 17 million square kilometers."
+  },
+  {
+    "id": "3",
+    "text": "What is the capital of Japan?",
+    "options": ["Osaka", "Tokyo", "Kyoto", "Hiroshima"],
+    "answer": "B",
+    "topic": "Geography",
+    "difficulty": "easy",
+    "explanation": "Tokyo is the capital and largest city of Japan."
+  },
+  {
+    "id": "4",
+    "text": "Which mountain is the highest in the world?",
+    "options": ["K2", "Kangchenjunga", "Mount Everest", "Lhotse"],
+    "answer": "C",
+    "topic": "Geography",
+    "difficulty": "easy",
+    "explanation": "Mount Everest is the highest mountain with a peak elevation of 8,849 meters."
+  },
+  {
+    "id": "5",
+    "text": "What is the capital of Brazil?",
+    "options": ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
+    "answer": "B",
+    "topic": "Geography",
+    "difficulty": "medium",
+    "explanation": "Brasília is the capital city of Brazil, purpose-built in the 1950s."
+  },
+  {
+    "id": "6",
+    "text": "Which desert is the largest in the world?",
+    "options": ["Kalahari", "Arabian", "Gobi", "Antarctic"],
+    "answer": "D",
+    "topic": "Geography",
+    "difficulty": "medium",
+    "explanation": "The Antarctic Desert is the largest desert in the world."
+  },
+  {
+    "id": "7",
+    "text": "What is the longest river in the world?",
+    "options": ["Amazon", "Yangtze", "Nile", "Mississippi"],
+    "answer": "C",
+    "topic": "Geography",
+    "difficulty": "medium",
+    "explanation": "The Nile River is the longest river at approximately 6,650 km."
+  },
+  {
+    "id": "8",
     "text": "Which element has the chemical symbol 'O'?",
     "options": ["Gold", "Oxygen", "Silver", "Iron"],
     "answer": "B",
@@ -18,16 +72,97 @@
     "explanation": "Oxygen (O) is a non-metal chemical element with atomic number 8."
   },
   {
-    "id": "3",
+    "id": "9",
+    "text": "What is the chemical formula for salt?",
+    "options": ["H2O", "NaCl", "CO2", "KCl"],
+    "answer": "B",
+    "topic": "Chemistry",
+    "difficulty": "easy",
+    "explanation": "Sodium chloride (NaCl) is the chemical formula for table salt."
+  },
+  {
+    "id": "10",
+    "text": "Which noble gas is used in neon signs?",
+    "options": ["Argon", "Neon", "Helium", "Krypton"],
+    "answer": "B",
+    "topic": "Chemistry",
+    "difficulty": "medium",
+    "explanation": "Neon (Ne) is used in neon signs to produce its characteristic red-orange glow."
+  },
+  {
+    "id": "11",
+    "text": "What is the pH of pure water at 25°C?",
+    "options": ["5", "7", "9", "11"],
+    "answer": "B",
+    "topic": "Chemistry",
+    "difficulty": "medium",
+    "explanation": "Pure water has a pH of 7, which is neutral on the pH scale."
+  },
+  {
+    "id": "12",
+    "text": "What is the atomic number of Carbon?",
+    "options": ["4", "6", "8", "12"],
+    "answer": "B",
+    "topic": "Chemistry",
+    "difficulty": "medium",
+    "explanation": "Carbon has an atomic number of 6, meaning it has 6 protons."
+  },
+  {
+    "id": "13",
     "text": "Who wrote 'Romeo and Juliet'?",
     "options": ["Charles Dickens", "William Shakespeare", "Mark Twain", "Jane Austen"],
     "answer": "B",
     "topic": "Literature",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "explanation": "William Shakespeare wrote this tragedy in the late 16th century."
   },
   {
-    "id": "4",
+    "id": "14",
+    "text": "Who is the author of '1984'?",
+    "options": ["George Orwell", "Aldous Huxley", "Ray Bradbury", "Isaac Asimov"],
+    "answer": "A",
+    "topic": "Literature",
+    "difficulty": "easy",
+    "explanation": "George Orwell wrote '1984', a dystopian novel published in 1949."
+  },
+  {
+    "id": "15",
+    "text": "Who wrote 'Pride and Prejudice'?",
+    "options": ["Charlotte Brontë", "Jane Austen", "Emily Dickinson", "George Eliot"],
+    "answer": "B",
+    "topic": "Literature",
+    "difficulty": "easy",
+    "explanation": "Jane Austen wrote 'Pride and Prejudice', a classic romance novel."
+  },
+  {
+    "id": "16",
+    "text": "Who wrote 'The Great Gatsby'?",
+    "options": ["Ernest Hemingway", "F. Scott Fitzgerald", "John Steinbeck", "William Faulkner"],
+    "answer": "B",
+    "topic": "Literature",
+    "difficulty": "medium",
+    "explanation": "F. Scott Fitzgerald wrote 'The Great Gatsby', set in the Jazz Age."
+  },
+  {
+    "id": "17",
+    "text": "Which Shakespearean play features the character Hamlet?",
+    "options": ["Macbeth", "Othello", "Hamlet", "Tempest"],
+    "answer": "C",
+    "topic": "Literature",
+    "difficulty": "medium",
+    "explanation": "Hamlet is the protagonist of Shakespeare's tragedy 'Hamlet, Prince of Denmark'."
+  },
+  {
+    "id": "18",
+    "text": "Who wrote 'Moby-Dick'?",
+    "options": ["Mark Twain", "Herman Melville", "Nathaniel Hawthorne", "Walt Whitman"],
+    "answer": "B",
+    "topic": "Literature",
+    "difficulty": "medium",
+    "explanation": "Herman Melville wrote 'Moby-Dick', an epic novel about whaling."
+  },
+  {
+    "id": "19",
     "text": "What is 7 * 8?",
     "options": ["54", "56", "48", "64"],
     "answer": "B",
@@ -36,7 +171,52 @@
     "explanation": "7 multiplied by 8 equals 56."
   },
   {
-    "id": "5",
+    "id": "20",
+    "text": "What is the square root of 144?",
+    "options": ["10", "12", "14", "16"],
+    "answer": "B",
+    "topic": "Math",
+    "difficulty": "easy",
+    "explanation": "The square root of 144 is 12 because 12 × 12 = 144."
+  },
+  {
+    "id": "21",
+    "text": "What is 15% of 200?",
+    "options": ["20", "25", "30", "35"],
+    "answer": "C",
+    "topic": "Math",
+    "difficulty": "easy",
+    "explanation": "15% of 200 = (15/100) × 200 = 30."
+  },
+  {
+    "id": "22",
+    "text": "What is the area of a circle with radius 5?",
+    "options": ["25π", "10π", "50π", "100π"],
+    "answer": "A",
+    "topic": "Math",
+    "difficulty": "medium",
+    "explanation": "Area of circle = πr² = π × 5² = 25π."
+  },
+  {
+    "id": "23",
+    "text": "What is the value of π (pi) approximately?",
+    "options": ["2.14", "3.14", "4.14", "5.14"],
+    "answer": "B",
+    "topic": "Math",
+    "difficulty": "easy",
+    "explanation": "π (pi) is approximately 3.14159..."
+  },
+  {
+    "id": "24",
+    "text": "Solve: 2x + 3 = 11",
+    "options": ["x = 2", "x = 3", "x = 4", "x = 5"],
+    "answer": "C",
+    "topic": "Math",
+    "difficulty": "medium",
+    "explanation": "2x + 3 = 11 → 2x = 8 → x = 4."
+  },
+  {
+    "id": "25",
     "text": "Which planet is known as the Red Planet?",
     "options": ["Venus", "Mars", "Jupiter", "Saturn"],
     "answer": "B",
@@ -45,30 +225,84 @@
     "explanation": "Mars is called the Red Planet due to its reddish appearance."
   },
   {
-    "id": "6",
-    "text": "What is the chemical formula for salt?",
-    "options": ["H2O", "NaCl", "CO2", "KCl"],
-    "answer": "B",
-    "topic": "Chemistry",
-    "difficulty": "medium",
-    "explanation": "Sodium chloride (NaCl) is the chemical formula for table salt."
-  },
-  {
-    "id": "7",
-    "text": "In which year did World War II end?",
-    "options": ["1943", "1944", "1945", "1946"],
-    "answer": "C",
-    "topic": "Geography",
-    "difficulty": "medium",
-    "explanation": "World War II ended in 1945 with the surrender of Japan."
-  },
-  {
-    "id": "8",
+    "id": "26",
     "text": "What is the largest planet in our solar system?",
     "options": ["Saturn", "Neptune", "Jupiter", "Uranus"],
     "answer": "C",
     "topic": "Astronomy",
     "difficulty": "easy",
     "explanation": "Jupiter is the largest planet by mass and volume."
+  },
+  {
+    "id": "27",
+    "text": "How many moons does Saturn have?",
+    "options": ["20", "53", "82", "95"],
+    "answer": "C",
+    "topic": "Astronomy",
+    "difficulty": "medium",
+    "explanation": "Saturn has 82 confirmed moons as of recent counts."
+  },
+  {
+    "id": "28",
+    "text": "What is the closest star to Earth?",
+    "options": ["Sirius", "Proxima Centauri", "Polaris", "Vega"],
+    "answer": "B",
+    "topic": "Astronomy",
+    "difficulty": "medium",
+    "explanation": "Proxima Centauri is the closest known star to Earth at about 4.24 light-years away."
+  },
+  {
+    "id": "29",
+    "text": "What is the Sun's primary composition?",
+    "options": ["Hydrogen and Helium", "Iron and Nickel", "Carbon and Oxygen", "Nitrogen and Oxygen"],
+    "answer": "A",
+    "topic": "Astronomy",
+    "difficulty": "medium",
+    "explanation": "The Sun is composed of about 73% Hydrogen and 25% Helium."
+  },
+  {
+    "id": "30",
+    "text": "In which year did World War II end?",
+    "options": ["1943", "1944", "1945", "1946"],
+    "answer": "C",
+    "topic": "History",
+    "difficulty": "easy",
+    "explanation": "World War II ended in 1945 with the surrender of Japan."
+  },
+  {
+    "id": "31",
+    "text": "Who was the first President of the United States?",
+    "options": ["Thomas Jefferson", "George Washington", "John Adams", "Benjamin Franklin"],
+    "answer": "B",
+    "topic": "History",
+    "difficulty": "easy",
+    "explanation": "George Washington was the first President of the United States (1789-1797)."
+  },
+  {
+    "id": "32",
+    "text": "In which year did the Titanic sink?",
+    "options": ["1910", "1911", "1912", "1913"],
+    "answer": "C",
+    "topic": "History",
+    "difficulty": "easy",
+    "explanation": "The RMS Titanic sank on April 15, 1912."
+  },
+  {
+    "id": "33",
+    "text": "Who was the first man to walk on the Moon?",
+    "options": ["Buzz Aldrin", "Neil Armstrong", "Yuri Gagarin", "John Glenn"],
+    "answer": "B",
+    "topic": "History",
+    "difficulty": "easy",
+    "explanation": "Neil Armstrong was the first human to walk on the Moon on July 20, 1969."
+  },
+  {
+    "id": "34",
+    "text": "In what year did the Berlin Wall fall?",
+    "options": ["1987", "1988", "1989", "1990"],
+    "answer": "C",
+    "topic": "History",
+    "difficulty": "medium",
+    "explanation": "The Berlin Wall fell on November 9, 1989, symbolizing the end of the Cold War."
   }
 ]
