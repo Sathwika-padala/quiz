@@ -28,6 +28,7 @@ class QuizCreator:
     ) -> Quiz:
         """Create a quiz for a specific topic."""
         import random
+        from copy import deepcopy
 
         pool = [q for q in self.questions if q.topic and q.topic.lower() == topic.lower()]
         if not pool:
@@ -35,6 +36,9 @@ class QuizCreator:
 
         count = min(count, len(pool))
         selected = random.sample(pool, count)
+        
+        # Create deep copies to avoid modifying original questions
+        selected = [deepcopy(q) for q in selected]
 
         if shuffle:
             for q in selected:
@@ -55,6 +59,7 @@ class QuizCreator:
     ) -> Quiz:
         """Create a quiz with specific difficulty."""
         import random
+        from copy import deepcopy
 
         pool = [q for q in self.questions if q.difficulty == difficulty.lower()]
         if not pool:
@@ -62,6 +67,9 @@ class QuizCreator:
 
         count = min(count, len(pool))
         selected = random.sample(pool, count)
+        
+        # Create deep copies to avoid modifying original questions
+        selected = [deepcopy(q) for q in selected]
 
         if shuffle:
             for q in selected:

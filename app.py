@@ -37,6 +37,9 @@ if "quiz_results" not in st.session_state:
 if "quiz_finished" not in st.session_state:
     st.session_state.quiz_finished = False
 
+# Reload questions each time to ensure fresh data
+st.session_state.creator = QuizCreator()
+
 # Custom CSS
 st.markdown("""
 <style>
