@@ -109,19 +109,22 @@ def render_create_quiz():
         categories = st.session_state.creator.get_available_categories()
         if categories:
             topic = st.selectbox("Select Topic:", categories, key="topic_select")
-            count = st.slider("Number of Questions:", 1, 10, 5, key="topic_count")
+            count = st.slider("Number of Questions:", 1, 20, 5, key="topic_count")
             title = st.text_input("Quiz Title:", value=f"{topic} Quiz", key="topic_title")
             
             if st.button("📚 Create Quiz by Topic", key="create_topic"):
-                try:
-                    quiz = st.session_state.creator.create_quiz_by_topic(title, topic, count)
-                    st.session_state.current_quiz = quiz
-                    st.session_state.quiz_started = False
-                    st.session_state.current_question_idx = 0
-                    st.success(f"✓ Quiz created: {title}")
-                    st.info(f"Questions: {len(quiz.questions)}")
-                except Exception as e:
-                    st.error(f"Error: {str(e)}")
+                if not st.session_state.username:
+                    st.error("Please enter your name first (on Home page)")
+                else:
+                    try:
+                        quiz = st.session_state.creator.create_quiz_by_topic(title, topic, count)
+                        st.session_state.current_quiz = quiz
+                        st.session_state.quiz_started = False
+                        st.session_state.current_question_idx = 0
+                        st.success(f"✓ Quiz created: {title}")
+                        st.info(f"📋 {len(quiz.questions)} questions selected")
+                    except Exception as e:
+                        st.error(f"Error: {str(e)}")
         else:
             st.warning("No topics available")
     
@@ -130,19 +133,22 @@ def render_create_quiz():
         difficulties = st.session_state.creator.get_available_difficulties()
         if difficulties:
             difficulty = st.selectbox("Select Difficulty:", difficulties, key="diff_select")
-            count = st.slider("Number of Questions:", 1, 10, 5, key="diff_count")
+            count = st.slider("Number of Questions:", 1, 20, 5, key="diff_count")
             title = st.text_input("Quiz Title:", value=f"{difficulty.capitalize()} Quiz", key="diff_title")
             
             if st.button("⚡ Create Quiz by Difficulty", key="create_diff"):
-                try:
-                    quiz = st.session_state.creator.create_quiz_by_difficulty(title, difficulty, count)
-                    st.session_state.current_quiz = quiz
-                    st.session_state.quiz_started = False
-                    st.session_state.current_question_idx = 0
-                    st.success(f"✓ Quiz created: {title}")
-                    st.info(f"Questions: {len(quiz.questions)}")
-                except Exception as e:
-                    st.error(f"Error: {str(e)}")
+                if not st.session_state.username:
+                    st.error("Please enter your name first (on Home page)")
+                else:
+                    try:
+                        quiz = st.session_state.creator.create_quiz_by_difficulty(title, difficulty, count)
+                        st.session_state.current_quiz = quiz
+                        st.session_state.quiz_started = False
+                        st.session_state.current_question_idx = 0
+                        st.success(f"✓ Quiz created: {title}")
+                        st.info(f"📋 {len(quiz.questions)} questions selected")
+                    except Exception as e:
+                        st.error(f"Error: {str(e)}")
         else:
             st.warning("No difficulties available")
     
