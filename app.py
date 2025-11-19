@@ -36,6 +36,8 @@ if "quiz_results" not in st.session_state:
     st.session_state.quiz_results = []
 if "quiz_finished" not in st.session_state:
     st.session_state.quiz_finished = False
+if "current_page" not in st.session_state:
+    st.session_state.current_page = "🏠 Home"
 
 # Reload questions each time to ensure fresh data
 st.session_state.creator = QuizCreator()
@@ -87,6 +89,17 @@ def render_home():
         if username:
             st.session_state.username = username
             st.success(f"Hello, {username}! 👋")
+            
+            # Auto-navigate to Create Quiz after entering name
+            col_btn1, col_btn2 = st.columns(2)
+            with col_btn1:
+                if st.button("➡️ Go to Create Quiz", key="home_to_create", use_container_width=True):
+                    st.session_state.current_page = "🎯 Create Quiz"
+                    st.rerun()
+            with col_btn2:
+                if st.button("📊 View Leaderboard", key="home_to_leader", use_container_width=True):
+                    st.session_state.current_page = "🏆 Leaderboard"
+                    st.rerun()
         st.markdown('</div>', unsafe_allow_html=True)
     
     with col2:
@@ -173,6 +186,16 @@ def render_create_quiz():
         st.write(f"**Category:** {st.session_state.current_quiz.category or 'General'}")
         st.write(f"**Difficulty:** {st.session_state.current_quiz.difficulty}")
         st.write(f"**Questions:** {len(st.session_state.current_quiz.questions)}")
+        
+        col_run, col_reset = st.columns(2)
+        with col_run:
+            if st.button("▶️ Start Quiz", key="create_to_run", use_container_width=True):
+                st.session_state.current_page = "🎮 Run Quiz"
+                st.rerun()
+        with col_reset:
+            if st.button("🔄 Create Another", key="create_reset", use_container_width=True):
+                st.session_state.current_quiz = None
+                st.rerun()
         st.markdown('</div>', unsafe_allow_html=True)
 
 
@@ -306,20 +329,28 @@ def render_quiz_results():
                 st.error("❌ Incorrect")
     
     # Actions
-    col1, col2 = st.columns(2)
+    col1, col2, col3 = st.columns(3)
     with col1:
-        if st.button("🔙 Back to Home", key="back_home"):
+        if st.button("🏠 Back to Home", key="back_home", use_container_width=True):
             st.session_state.current_quiz = None
             st.session_state.quiz_finished = False
             st.session_state.current_question_idx = 0
             st.session_state.quiz_results = []
+            st.session_state.current_page = "🏠 Home"
             st.rerun()
     
     with col2:
-        if st.button("🔄 Take Another Quiz", key="another_quiz"):
+        if st.button("🎯 Create New Quiz", key="another_quiz", use_container_width=True):
             st.session_state.quiz_finished = False
             st.session_state.current_question_idx = 0
             st.session_state.quiz_results = []
+            st.session_state.current_quiz = None
+            st.session_state.current_page = "🎯 Create Quiz"
+            st.rerun()
+    
+    with col3:
+        if st.button("🏆 View Leaderboard", key="results_to_leader", use_container_width=True):
+            st.session_state.current_page = "🏆 Leaderboard"
             st.rerun()
 
 
@@ -399,11 +430,18 @@ def render_leaderboard():
 st.sidebar.markdown("# 📚 Quiz Generator")
 st.sidebar.markdown("---")
 
+# Use session state for page selection
+page_options = ["🏠 Home", "🎯 Create Quiz", "🎮 Run Quiz", "🏆 Leaderboard"]
 page = st.sidebar.radio(
     "Navigate:",
-    ["🏠 Home", "🎯 Create Quiz", "🎮 Run Quiz", "🏆 Leaderboard"],
+    page_options,
+    index=page_options.index(st.session_state.current_page),
     label_visibility="collapsed",
 )
+
+# Update session state when sidebar selection changes
+if page != st.session_state.current_page:
+    st.session_state.current_page = page
 
 st.sidebar.markdown("---")
 st.sidebar.subheader("ℹ️ About")
@@ -413,11 +451,11 @@ st.sidebar.info(
 )
 
 # Route pages
-if page == "🏠 Home":
+if st.session_state.current_page == "🏠 Home":
     render_home()
-elif page == "🎯 Create Quiz":
+elif st.session_state.current_page == "🎯 Create Quiz":
     render_create_quiz()
-elif page == "🎮 Run Quiz":
+elif st.session_state.current_page == "🎮 Run Quiz":
     render_run_quiz()
-elif page == "🏆 Leaderboard":
+elif st.session_state.current_page == "🏆 Leaderboard":
     render_leaderboard()
