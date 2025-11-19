@@ -102,6 +102,16 @@ def render_create_quiz():
     """Render quiz creation page."""
     st.markdown('<div class="main-header">🎯 Create Quiz</div>', unsafe_allow_html=True)
     
+    # Debug: Show available questions by topic
+    with st.expander("📊 Available Questions by Topic"):
+        topic_counts = {}
+        for q in st.session_state.creator.questions:
+            topic = q.topic if q.topic else "Unknown"
+            topic_counts[topic] = topic_counts.get(topic, 0) + 1
+        
+        for topic, count in sorted(topic_counts.items()):
+            st.write(f"**{topic}**: {count} questions")
+    
     col1, col2 = st.columns(2)
     
     with col1:
@@ -192,6 +202,13 @@ def render_run_quiz():
     if st.session_state.current_question_idx < len(quiz.questions):
         question = quiz.questions[st.session_state.current_question_idx]
         
+        # Show topic and difficulty
+        col_topic, col_diff = st.columns(2)
+        with col_topic:
+            st.caption(f"📚 Topic: {question.topic}")
+        with col_diff:
+            st.caption(f"⚡ Difficulty: {question.difficulty}")
+        
         st.subheader(f"Q{st.session_state.current_question_idx + 1}: {question.text}")
         
         # Display options
@@ -211,6 +228,7 @@ def render_run_quiz():
                 st.session_state.quiz_results.append({
                     "index": st.session_state.current_question_idx + 1,
                     "question": question.text,
+                    "topic": question.topic,
                     "chosen_letter": selected,
                     "chosen_text": options_dict[selected],
                     "correct_letter": question.answer,
@@ -276,11 +294,13 @@ def render_quiz_results():
     st.subheader("📝 Detailed Results")
     for result in results:
         status = "✓" if result["is_correct"] else "✗"
-        with st.expander(f"{status} Q{result['index']}: {result['question'][:50]}..."):
+        with st.expander(f"{status} Q{result['index']} ({result.get('topic', 'Unknown')}): {result['question'][:50]}..."):
+            st.write(f"**Topic:** {result.get('topic', 'Unknown')}")
+            st.write(f"**Difficulty:** {result['difficulty']}")
             st.write(f"**Your answer:** {result['chosen_letter']} ({result['chosen_text']})")
             st.write(f"**Correct answer:** {result['correct_letter']}")
             if not result["is_correct"]:
-                st.write(f"**Difficulty:** {result['difficulty']}")
+                st.error("❌ Incorrect")
     
     # Actions
     col1, col2 = st.columns(2)
